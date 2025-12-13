@@ -12,7 +12,7 @@ export default function CampaignList() {
   const load = async () => {
     try {
       setLoading(true);
-      const res = await api.get("/api/campaigns/all");
+      const res = await api.get("/campaigns/all");
       setItems(res.data);
     } catch (error) {
       setMessage("❌ Failed to load campaigns");
@@ -30,7 +30,7 @@ export default function CampaignList() {
     setMessage("");
     
     try {
-      const res = await api.post("/api/campaign/send", null, {
+      const res = await api.post("/campaign/send", null, {
         params: { campaign_id: id }
       });
       setMessage(`✅ Campaign sent successfully! Total sent: ${res.data.total_sent}`);

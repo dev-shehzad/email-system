@@ -22,7 +22,7 @@ function Dashboard() {
     const loadStats = async () => {
       try {
         // backend routes are registered under the /api prefix (see backend/main.py)
-        const statsRes = await api.get("/api/stats/dashboard");
+        const statsRes = await api.get("/stats/dashboard");
         setStats(statsRes.data);
       } catch (error) {
         console.error("Failed to load stats:", error);

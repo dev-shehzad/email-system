@@ -28,7 +28,7 @@ function UploadContacts() {
     try {
       console.log("🔄 Sending request to backend...");
       const res = await api.post(
-        "/api/contacts/upload",
+        "/contacts/upload",
         fd
       );
 

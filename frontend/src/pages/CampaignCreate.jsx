@@ -25,7 +25,7 @@ export default function CampaignCreate() {
     setMessage("");
     
     try {
-      const res = await api.post("/api/campaign/create", null, {
+      const res = await api.post("/campaign/create", null, {
         params: { subject, sender, html }
       });
 
@@ -54,7 +54,7 @@ export default function CampaignCreate() {
     setMessage("");
     
     try {
-      const res = await api.post("/api/campaign/test", null, {
+      const res = await api.post("/campaign/test", null, {
         params: { campaign_id: campaignId, test_email: testEmail }
       });
 

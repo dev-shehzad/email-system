@@ -20,7 +20,7 @@ function Login() {
       formData.append("email", email);
       formData.append("password", password);
       
-      const response = await api.post("/api/login", formData);
+      const response = await api.post("/login", formData);
 
       if (response.data.token) {
         localStorage.setItem("token", response.data.token);

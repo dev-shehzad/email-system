@@ -60,7 +60,7 @@ Database create hone ke baad:
 
 ### Step 1: Create Web Service
 
-1. Render dashboard me ja
+1. Render dashboard me 
 2. **"New +"** → **"Web Service"**
 3. Connect GitHub repo (if not connected, connect now)
 4. Select: **email-system** repository
